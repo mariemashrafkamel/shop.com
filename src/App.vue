@@ -2,10 +2,10 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/">Sign In</router-link> |
-      <router-link to="/">Sign Up</router-link> |
-      <router-link to="/">Settings</router-link> |
-      <router-link to="/">Help</router-link> |
+      <router-link to="/singin">Sign In</router-link> |
+      <router-link to="/signup">Sign Up</router-link> |
+      <router-link to="/settings">Settings</router-link> |
+      <router-link to="/help">Help</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
@@ -18,7 +18,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  
+  color: #000102;
 }
 
 #nav {
@@ -27,9 +28,11 @@
   a {
     font-weight: bold;
     color: #2c3e50;
+    text-decoration: none;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #e61717;
+      text-decoration: none;
     }
   }
 }
