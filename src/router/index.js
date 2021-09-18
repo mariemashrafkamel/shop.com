@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
@@ -8,9 +9,11 @@ import Settings from "../views/Settings.vue";
 import Cart from "../views/Cart.vue";
 import Profile from "../views/Profile.vue";
 import Help from "../views/Help.vue";
+import Supermarket from "../views/Supermarket.vue";
+import User from "../views/User.vue";
 
-
-
+// eslint-disable-next-line no-unused-vars
+import app from '../main.js';
 
 Vue.use(VueRouter);
 
@@ -35,6 +38,11 @@ const routes = [{
         component: SignUp,
     },
     {
+        path: "/user",
+        name: "User",
+        component: User,
+    },
+    {
         path: "/settings",
         name: "Settings",
         component: Settings,
@@ -54,6 +62,12 @@ const routes = [{
         name: "Help",
         component: Help,
     },
+    {
+        path: "/supermarket",
+        name: "Supermarket",
+        component: Supermarket,
+    },
+
 ];
 
 const router = new VueRouter({
